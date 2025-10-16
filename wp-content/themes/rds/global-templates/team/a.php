@@ -24,20 +24,16 @@
                     if (empty($image_full)) {
                         $image_full = get_exist_image_url("meet-the-team", "team_placeholder.png");
                     }
-			
-                ?>
+                    ?>
                     <div class="col-lg-4 team_card [ is-collapsed ] border-0 ">
                         <div class="card__inner [ js-expander ] mb-4">
                             <div class="team_img">
-								
                                 <img src="<?php echo !empty($image_full) ? $image_full : ''; ?>" class="img-fluid w-100" alt="team image" width="350" height="220">
                             </div>
                             <div class="row pt-3">
                                 <div class="col-8">
-                                    <h3 class="text_24"><?php echo !empty(get_the_title()) ? get_the_title() : ''; ?></h3>
-                                    <span class="h7 mb-2"><?php echo !empty(get_post_meta(get_the_ID(), "team_position", true)) ? get_post_meta(get_the_ID(), "team_position", true) : ''; ?></span>
-									<span class="h7 color_primary--imp"><?php echo !empty(get_post_meta(get_the_ID(), "location", true)) ? get_post_meta(get_the_ID(), "location", true) : ''; ?></span>
-
+                                    <h3 class=""><?php echo !empty(get_the_title()) ? get_the_title() : ''; ?></h3>
+                                    <span class="h7"><?php echo !empty(get_post_meta(get_the_ID(), "team_position", true)) ? get_post_meta(get_the_ID(), "team_position", true) : ''; ?></span>
                                 </div>
                                 <div class="col-4 pt-1">
                                     <span class="d-block text-end text-uppercase text_18 line_height_23 font_default text_semibold">
